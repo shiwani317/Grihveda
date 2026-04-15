@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Marketing by Grihveda | Grow Your Business Online</title>
+<meta name="description" content="We help businesses grow online with high-converting websites, ads, SEO & lead generation. Call 8866581993 for free consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root {
+  --primary: #6C35DE;
+  --primary-dark: #4f1db8;
+  --primary-light: #8B5CF6;
+  --accent: #F97316;
+  --accent2: #06B6D4;
+  --dark: #0A0A0F;
+  --dark2: #111118;
+  --dark3: #1A1A25;
+  --card-bg: #16161F;
+  --card-border: rgba(108,53,222,0.25);
+  --text: #F0F0F5;
+  --text-muted: #9898B0;
+  --text-dim: #6868808;
+  --white: #ffffff;
+  --green: #22C55E;
+  --wa: #25D366;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 20px 60px rgba(108,53,222,0.15);
+  --glow: 0 0 40px rgba(108,53,222,0.3);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Poppins',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+ul{list-style:none}
+button{cursor:pointer;font-family:inherit;border:none;outline:none}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--dark)}
+::-webkit-scrollbar-thumb{background:var(--primary);border-radius:10px}
+
+/* UTILITY */
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.section-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(108,53,222,0.12);border:1px solid rgba(108,53,222,0.3);color:var(--primary-light);font-size:13px;font-weight:600;padding:6px 16px;border-radius:50px;margin-bottom:20px;letter-spacing:0.5px}
+.section-title{font-size:clamp(28px,4vw,42px);font-weight:800;line-height:1.2;margin-bottom:16px}
+.section-sub{color:var(--text-muted);font-size:clamp(15px,2vw,17px);max-width:560px;margin:0 auto}
+.gradient-text{background:linear-gradient(135deg,#A78BFA,#6C35DE,#06B6D4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.highlight{color:var(--accent)}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:50px;font-size:15px;font-weight:600;transition:all 0.3s ease;cursor:pointer;white-space:nowrap}
+.btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-light));color:#fff;box-shadow:0 8px 30px rgba(108,53,222,0.4)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(108,53,222,0.6)}
+.btn-wa{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;box-shadow:0 8px 30px rgba(37,211,102,0.35)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(37,211,102,0.5)}
+.btn-call{background:linear-gradient(135deg,var(--accent),#ea580c);color:#fff;box-shadow:0 8px 30px rgba(249,115,22,0.35)}
+.btn-call:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(249,115,22,0.5)}
+.btn-outline{background:transparent;border:2px solid rgba(108,53,222,0.5);color:var(--primary-light)}
+.btn-outline:hover{background:rgba(108,53,222,0.1);border-color:var(--primary-light)}
+
+/* NAVBAR */
+nav{position:fixed;top:0;left:0;right:0;z-index:999;transition:all 0.3s ease;padding:16px 0}
+nav.scrolled{background:rgba(10,10,15,0.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(108,53,222,0.15);padding:12px 0;box-shadow:0 4px 30px rgba(0,0,0,0.3)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;color:#fff;flex-shrink:0}
+.logo-text{font-size:18px;font-weight:800;line-height:1.1}
+.logo-text span{display:block;font-size:11px;font-weight:400;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{color:var(--text-muted);font-size:14px;font-weight:500;transition:color 0.2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary-light);transition:width 0.3s;border-radius:2px}
+.nav-links a:hover{color:var(--text)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:12px}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--text);border-radius:2px;transition:all 0.3s}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,10,15,0.98);backdrop-filter:blur(20px);z-index:998;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:22px;font-weight:600;color:var(--text);transition:color 0.2s}
+.mobile-menu a:hover{color:var(--primary-light)}
+.mobile-menu .mob-btns{display:flex;flex-direction:column;gap:12px;width:260px}
+.close-menu{position:absolute;top:20px;right:20px;background:none;border:none;color:var(--text);font-size:28px;cursor:pointer}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 80px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 30%,rgba(108,53,222,0.25) 0%,transparent 70%)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 20% 80%,rgba(6,182,212,0.12) 0%,transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero-badge-wrap{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.pulse-dot{width:8px;height:8px;background:var(--green);border-radius:50%;animation:pulse-anim 2s infinite;flex-shrink:0}
+@keyframes pulse-anim{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,0.4)}50%{box-shadow:0 0 0 8px rgba(34,197,94,0)}}
+.hero-title{font-size:clamp(32px,5vw,58px);font-weight:900;line-height:1.1;margin-bottom:20px;letter-spacing:-1px}
+.hero-sub{font-size:clamp(15px,2vw,18px);color:var(--text-muted);margin-bottom:36px;max-width:520px;line-height:1.7}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px}
+.hero-stats{display:flex;gap:32px;flex-wrap:wrap}
+.stat{display:flex;flex-direction:column}
+.stat-num{font-size:28px;font-weight:800;background:linear-gradient(135deg,#A78BFA,var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+.stat-label{font-size:12px;color:var(--text-muted);font-weight:500;margin-top:2px}
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center}
+.hero-card-main{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:28px;width:100%;max-width:380px;box-shadow:var(--shadow);position:relative;animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0px)}50%{transform:translateY(-14px)}}
+.hero-card-header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.hero-avatar{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent2));display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.hero-card-title{font-weight:700;font-size:15px}
+.hero-card-sub{font-size:12px;color:var(--text-muted)}
+.metric-row{display:flex;gap:12px;margin-bottom:16px}
+.metric-box{flex:1;background:rgba(108,53,222,0.1);border:1px solid rgba(108,53,222,0.2);border-radius:10px;padding:12px;text-align:center}
+.metric-box .val{font-size:20px;font-weight:800;color:var(--primary-light)}
+.metric-box .lbl{font-size:11px;color:var(--text-muted)}
+.chart-bars{display:flex;align-items:flex-end;gap:6px;height:60px;margin-top:8px}
+.bar{flex:1;background:linear-gradient(180deg,var(--primary-light),var(--primary));border-radius:4px 4px 0 0;animation:grow 1s ease both}
+@keyframes grow{from{transform:scaleY(0);transform-origin:bottom}to{transform:scaleY(1);transform-origin:bottom}}
+.hero-float-1{position:absolute;top:-20px;right:-30px;background:var(--card-bg);border:1px solid rgba(249,115,22,0.3);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;box-shadow:0 8px 30px rgba(249,115,22,0.15);animation:float2 5s ease-in-out infinite;z-index:2}
+@keyframes float2{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(1deg)}}
+.hero-float-2{position:absolute;bottom:20px;left:-40px;background:var(--card-bg);border:1px solid rgba(6,182,212,0.3);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;box-shadow:0 8px 30px rgba(6,182,212,0.15);animation:float3 7s ease-in-out infinite;z-index:2}
+@keyframes float3{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(12px) rotate(-2deg)}}
+.floating-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+.orb1{width:500px;height:500px;background:radial-gradient(circle,rgba(108,53,222,0.15),transparent);top:-200px;right:-100px}
+.orb2{width:400px;height:400px;background:radial-gradient(circle,rgba(6,182,212,0.1),transparent);bottom:-150px;left:-100px}
+
+/* TRUSTED */
+.trusted{padding:30px 0;border-top:1px solid rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.04)}
+.trusted-inner{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center}
+.trusted-label{font-size:13px;color:var(--text-muted);font-weight:600;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
+.trusted-logos{display:flex;align-items:center;gap:24px;flex-wrap:wrap;justify-content:center}
+.t-badge{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:8px 18px;font-size:13px;color:var(--text-muted);font-weight:500;white-space:nowrap;transition:all 0.2s}
+.t-badge:hover{border-color:rgba(108,53,222,0.3);color:var(--text)}
+
+/* SERVICES */
+.services{padding:100px 0;position:relative}
+.services::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:100%;background:linear-gradient(180deg,transparent,rgba(108,53,222,0.2),transparent);pointer-events:none}
+.section-head{text-align:center;margin-bottom:60px}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
+.service-card{background:var(--card-bg);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);padding:28px;transition:all 0.35s ease;position:relative;overflow:hidden;cursor:default}
+.service-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(108,53,222,0.08),transparent);opacity:0;transition:opacity 0.35s}
+.service-card:hover{transform:translateY(-6px);border-color:var(--card-border);box-shadow:var(--shadow)}
+.service-card:hover::before{opacity:1}
+.service-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px;transition:transform 0.3s}
+.service-card:hover .service-icon{transform:scale(1.1) rotate(-5deg)}
+.ic-purple{background:rgba(108,53,222,0.15);color:var(--primary-light)}
+.ic-cyan{background:rgba(6,182,212,0.12);color:var(--accent2)}
+.ic-orange{background:rgba(249,115,22,0.12);color:var(--accent)}
+.ic-green{background:rgba(34,197,94,0.12);color:#22C55E}
+.ic-pink{background:rgba(236,72,153,0.12);color:#EC4899}
+.ic-yellow{background:rgba(234,179,8,0.12);color:#EAB308}
+.ic-blue{background:rgba(59,130,246,0.12);color:#3B82F6}
+.ic-red{background:rgba(239,68,68,0.12);color:#EF4444}
+.service-title{font-size:17px;font-weight:700;margin-bottom:8px}
+.service-desc{font-size:14px;color:var(--text-muted);line-height:1.6}
+.service-arrow{position:absolute;bottom:24px;right:24px;width:32px;height:32px;background:rgba(108,53,222,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--primary-light);font-size:14px;opacity:0;transition:all 0.3s;transform:translateX(-8px)}
+.service-card:hover .service-arrow{opacity:1;transform:translateX(0)}
+
+/* PRICING */
+.pricing{padding:100px 0;background:linear-gradient(180deg,var(--dark) 0%,var(--dark2) 50%,var(--dark) 100%)}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px;margin-top:60px}
+.price-card{background:var(--card-bg);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:36px;transition:all 0.35s;position:relative;overflow:hidden}
+.price-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--primary-light));transform:scaleX(0);transition:transform 0.35s}
+.price-card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.price-card:hover::after{transform:scaleX(1)}
+.price-card.popular{border-color:rgba(108,53,222,0.5);background:linear-gradient(135deg,rgba(108,53,222,0.08),var(--card-bg));box-shadow:0 0 50px rgba(108,53,222,0.15)}
+.price-card.popular::after{transform:scaleX(1)}
+.price-badge{position:absolute;top:20px;right:20px;background:linear-gradient(135deg,var(--primary),var(--primary-light));color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:0.5px;text-transform:uppercase}
+.price-plan{font-size:13px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
+.price-amount{display:flex;align-items:flex-end;gap:4px;margin-bottom:8px}
+.price-currency{font-size:24px;font-weight:700;color:var(--primary-light);line-height:1.4}
+.price-number{font-size:52px;font-weight:900;line-height:1;letter-spacing:-2px}
+.price-period{font-size:14px;color:var(--text-muted);margin-bottom:28px}
+.price-name{font-size:20px;font-weight:700;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.price-features{display:flex;flex-direction:column;gap:12px;margin-bottom:32px}
+.price-feat{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-muted)}
+.price-feat i{color:var(--green);font-size:13px;flex-shrink:0}
+.price-btn{width:100%;padding:14px;border-radius:50px;font-size:15px;font-weight:600;font-family:inherit;transition:all 0.3s;cursor:pointer}
+.price-btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-light));color:#fff;border:none;box-shadow:0 8px 30px rgba(108,53,222,0.35)}
+.price-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(108,53,222,0.5)}
+.price-btn-outline{background:transparent;border:2px solid rgba(108,53,222,0.4);color:var(--primary-light)}
+.price-btn-outline:hover{background:rgba(108,53,222,0.1);border-color:var(--primary-light)}
+
+/* PORTFOLIO */
+.portfolio{padding:100px 0}
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-top:60px}
+.port-card{background:var(--card-bg);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);overflow:hidden;transition:all 0.35s;group}
+.port-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--card-border)}
+.port-img{height:180px;overflow:hidden;position:relative;background:linear-gradient(135deg,var(--dark3),var(--dark2))}
+.port-img-inner{width:100%;height:100%;display:flex;align-items:center;justify-content:center;transition:transform 0.5s}
+.port-card:hover .port-img-inner{transform:scale(1.08)}
+.port-mockup{width:120px;height:100px;background:var(--dark);border-radius:8px;border:2px solid rgba(255,255,255,0.1);display:flex;flex-direction:column;overflow:hidden}
+.port-mock-bar{height:20px;background:linear-gradient(90deg,var(--primary),var(--primary-light));display:flex;align-items:center;padding:0 8px;gap:4px}
+.pm-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.5)}
+.port-mock-body{flex:1;background:rgba(255,255,255,0.03);display:flex;flex-direction:column;gap:6px;padding:8px}
+.pmb-line{height:4px;background:rgba(255,255,255,0.08);border-radius:2px}
+.pmb-line.short{width:60%}
+.pmb-line.med{width:80%}
+.port-overlay{position:absolute;inset:0;background:rgba(108,53,222,0.8);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s;font-size:28px;color:#fff}
+.port-card:hover .port-overlay{opacity:1}
+.port-content{padding:20px}
+.port-category{font-size:11px;font-weight:700;color:var(--primary-light);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.port-title{font-size:16px;font-weight:700;margin-bottom:6px}
+.port-url{font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:6px}
+.port-url i{font-size:10px}
+
+/* WHY US */
+.why{padding:100px 0;background:var(--dark2)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:28px;margin-top:60px}
+.why-card{background:var(--dark3);border:1px solid rgba(255,255,255,0.05);border-radius:var(--radius);padding:28px;display:flex;gap:18px;align-items:flex-start;transition:all 0.3s}
+.why-card:hover{border-color:rgba(108,53,222,0.3);transform:translateY(-4px)}
+.why-icon{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(108,53,222,0.2),rgba(108,53,222,0.05));border:1px solid rgba(108,53,222,0.2);display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--primary-light);flex-shrink:0}
+.why-title{font-size:16px;font-weight:700;margin-bottom:6px}
+.why-text{font-size:14px;color:var(--text-muted);line-height:1.6}
+
+/* BIG CTA */
+.bigcta{padding:100px 0;position:relative;overflow:hidden;text-align:center}
+.bigcta-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(108,53,222,0.2),transparent);z-index:0}
+.bigcta-inner{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.bigcta-title{font-size:clamp(32px,5vw,52px);font-weight:900;line-height:1.1;margin-bottom:20px}
+.bigcta-sub{font-size:18px;color:var(--text-muted);margin-bottom:40px}
+.bigcta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.bigcta-note{margin-top:24px;font-size:14px;color:var(--text-muted)}
+.bigcta-note span{color:var(--primary-light);font-weight:600}
+
+/* CONTACT FORM */
+.contact{padding:100px 0}
+.contact-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center}
+.contact-info{display:flex;flex-direction:column;gap:28px}
+.contact-info-title{font-size:clamp(26px,3vw,36px);font-weight:800;line-height:1.2;margin-bottom:8px}
+.contact-info-sub{color:var(--text-muted);font-size:16px;margin-bottom:12px}
+.contact-item{display:flex;align-items:center;gap:14px}
+.ci-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ci-purple{background:rgba(108,53,222,0.15);color:var(--primary-light)}
+.ci-green{background:rgba(37,211,102,0.12);color:var(--wa)}
+.ci-cyan{background:rgba(6,182,212,0.12);color:var(--accent2)}
+.ci-label{font-size:12px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:0.5px}
+.ci-val{font-size:16px;font-weight:600}
+.form-card{background:var(--card-bg);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:40px}
+.form-title{font-size:22px;font-weight:800;margin-bottom:6px}
+.form-sub{font-size:14px;color:var(--text-muted);margin-bottom:28px}
+.form-group{margin-bottom:18px}
+.form-label{display:block;font-size:13px;font-weight:600;color:var(--text-muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px}
+.form-input,.form-select{width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-sm);padding:14px 18px;font-size:15px;color:var(--text);font-family:inherit;transition:all 0.2s;-webkit-appearance:none;appearance:none}
+.form-input:focus,.form-select:focus{outline:none;border-color:rgba(108,53,222,0.5);background:rgba(108,53,222,0.05);box-shadow:0 0 0 3px rgba(108,53,222,0.1)}
+.form-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239898B0' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.form-select option{background:var(--dark2);color:var(--text)}
+.form-input::placeholder{color:var(--text-muted)}
+.form-btn{width:100%;padding:16px;border-radius:50px;background:linear-gradient(135deg,var(--primary),var(--primary-light));color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;border:none;display:flex;align-items:center;justify-content:center;gap:10px;transition:all 0.3s;box-shadow:0 8px 30px rgba(108,53,222,0.4);margin-top:8px}
+.form-btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(108,53,222,0.6)}
+.form-success{display:none;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius-sm);padding:16px;text-align:center;color:var(--green);font-weight:600;margin-top:12px}
+.form-success.show{display:block}
+
+/* FOOTER */
+footer{background:var(--dark2);border-top:1px solid rgba(255,255,255,0.05);padding:60px 0 30px}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:60px;margin-bottom:50px}
+.footer-brand p{font-size:14px;color:var(--text-muted);line-height:1.8;margin:16px 0 24px}
+.footer-social{display:flex;gap:12px}
+.fs-link{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:15px;transition:all 0.2s}
+.fs-link:hover{background:rgba(108,53,222,0.2);border-color:rgba(108,53,222,0.3);color:var(--primary-light)}
+.footer-col h4{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:20px}
+.footer-col ul{display:flex;flex-direction:column;gap:12px}
+.footer-col ul li a{font-size:14px;color:var(--text-muted);transition:color 0.2s}
+.footer-col ul li a:hover{color:var(--primary-light)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.05)}
+.footer-bottom p{font-size:13px;color:var(--text-muted)}
+.footer-bottom span{color:var(--primary-light)}
+
+/* FLOATING BUTTONS */
+.float-btns{position:fixed;bottom:30px;right:24px;display:flex;flex-direction:column;gap:12px;z-index:9990}
+.float-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;color:#fff;cursor:pointer;transition:all 0.3s;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.float-wa{background:linear-gradient(135deg,#25D366,#128C7E)}
+.float-wa:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(37,211,102,0.5)}
+.float-call{background:linear-gradient(135deg,var(--accent),#ea580c)}
+.float-call:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(249,115,22,0.5)}
+.float-pulse{animation:float-pulse 2s infinite}
+@keyframes float-pulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.3),0 0 0 0 rgba(37,211,102,0.4)}70%{box-shadow:0 4px 20px rgba(37,211,102,0.3),0 0 0 10px rgba(37,211,102,0)}}
+
+/* SCROLL ANIMATION */
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+.fade-in-left{opacity:0;transform:translateX(-30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-in-left.visible{opacity:1;transform:translateX(0)}
+.fade-in-right{opacity:0;transform:translateX(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-in-right.visible{opacity:1;transform:translateX(0)}
+
+/* DIVIDER */
+.section-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(108,53,222,0.3),transparent);margin:0 auto}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.hero-grid{grid-template-columns:1fr;text-align:center}
+.hero-sub{margin:0 auto 36px}
+.hero-btns{justify-content:center}
+.hero-stats{justify-content:center}
+.hero-visual{display:none}
+.contact-wrap{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+.nav-links,.nav-cta{display:none}
+.hamburger{display:flex}
+.footer-grid{grid-template-columns:1fr}
+.footer-brand{display:block}
+}
+@media(max-width:480px){
+.hero-btns{flex-direction:column;align-items:center}
+.bigcta-btns{flex-direction:column;align-items:center}
+.btn{justify-content:center;width:100%;max-width:280px}
+.hero-stats{gap:20px}
+.float-btns{bottom:20px;right:16px}
+.form-card{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">G</div>
+        <div class="logo-text">Grihveda <span>Digital Marketing</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="https://wa.me/918866531993" class="btn btn-wa" style="padding:10px 20px;font-size:14px">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="tel:+918866581993" class="btn btn-call" style="padding:10px 20px;font-size:14px">
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+  <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <div class="mob-btns">
+    <a href="https://wa.me/918866531993" class="btn btn-wa" style="justify-content:center"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+    <a href="tel:+918866581993" class="btn btn-call" style="justify-content:center"><i class="fas fa-phone"></i> Call Now</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="floating-orb orb1"></div>
+  <div class="floating-orb orb2"></div>
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-wrap">
+          <div class="section-badge"><div class="pulse-dot"></div> 100+ Businesses Served</div>
+          <div class="section-badge" style="background:rgba(249,115,22,0.1);border-color:rgba(249,115,22,0.3);color:var(--accent)"><i class="fas fa-star" style="font-size:11px"></i> Trusted Agency</div>
+        </div>
+        <h1 class="hero-title">
+          Grow Your Business Online with <span class="gradient-text">High-Converting Websites & Ads</span> 🚀
+        </h1>
+        <p class="hero-sub">We build websites, run ads, and generate quality leads for your business — affordable, fast, and results-focused.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-rocket"></i> Get Free Consultation</a>
+          <a href="https://wa.me/918866531993" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Businesses Served</span></div>
+          <div class="stat"><span class="stat-num">5★</span><span class="stat-label">Client Rating</span></div>
+          <div class="stat"><span class="stat-num">3x</span><span class="stat-label">Avg Lead Growth</span></div>
+          <div class="stat"><span class="stat-num">24h</span><span class="stat-label">Fast Delivery</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-float-1"><i class="fas fa-arrow-trend-up" style="color:var(--accent)"></i> Leads up 300%</div>
+        <div class="hero-card-main">
+          <div class="hero-card-header">
+            <div class="hero-avatar">📈</div>
+            <div><div class="hero-card-title">Business Analytics</div><div class="hero-card-sub">Live performance dashboard</div></div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-box"><div class="val">₹2.4L</div><div class="lbl">Revenue</div></div>
+            <div class="metric-box"><div class="val">847</div><div class="lbl">Leads</div></div>
+            <div class="metric-box" style="background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.2)"><div class="val" style="color:var(--green)">+68%</div><div class="lbl">Growth</div></div>
+          </div>
+          <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px;font-weight:600">Monthly Traffic Growth</div>
+          <div class="chart-bars">
+            <div class="bar" style="height:30%;animation-delay:0.1s"></div>
+            <div class="bar" style="height:45%;animation-delay:0.2s"></div>
+            <div class="bar" style="height:38%;animation-delay:0.3s"></div>
+            <div class="bar" style="height:60%;animation-delay:0.4s"></div>
+            <div class="bar" style="height:52%;animation-delay:0.5s"></div>
+            <div class="bar" style="height:75%;animation-delay:0.6s"></div>
+            <div class="bar" style="height:68%;animation-delay:0.7s"></div>
+            <div class="bar" style="height:90%;animation-delay:0.8s;background:linear-gradient(180deg,#22C55E,#16A34A)"></div>
+          </div>
+        </div>
+        <div class="hero-float-2"><i class="fas fa-bullseye" style="color:var(--accent2)"></i> Ads ROI 5x</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUSTED -->
+<div class="trusted">
+  <div class="container">
+    <div class="trusted-inner">
+      <span class="trusted-label">Serving Industries</span>
+      <div class="trusted-logos">
+        <span class="t-badge">🏠 Real Estate</span>
+        <span class="t-badge">🍽️ Restaurant</span>
+        <span class="t-badge">🧹 Home Services</span>
+        <span class="t-badge">📄 Professional</span>
+        <span class="t-badge">🛒 E-Commerce</span>
+        <span class="t-badge">🏥 Healthcare</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="section-badge"><i class="fas fa-layer-group" style="font-size:12px"></i> Our Services</div>
+      <h2 class="section-title">Everything Your Business <span class="gradient-text">Needs to Grow</span></h2>
+      <p class="section-sub">From stunning websites to powerful ad campaigns — we handle your entire digital presence.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon ic-purple"><i class="fas fa-code"></i></div>
+        <h3 class="service-title">Website Development</h3>
+        <p class="service-desc">Fast, mobile-friendly, SEO-ready websites that convert visitors into customers.</p>
+        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon ic-blue"><i class="fab fa-facebook-f"></i></div>
+        <h3 class="service-title">Facebook & Instagram Ads</h3>
+        <p class="service-desc">Targeted ad campaigns that reach your ideal customers and generate real leads.</p>
+        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon ic-green"><i class="fas fa-magnifying-glass"></i></div>
+        <h3 class="service-title">SEO Optimization</h3>
+        <p class="service-desc">Rank higher on Google and drive organic traffic to grow your business naturally.</p>
+        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon ic-pink"><i class="fas fa-share-nodes"></i></div>
+        <h3 class="service-title">Social Media Handling</h3>
+        <p class="service-desc">Professional content creation and management for Instagram, Facebook & more.</p>
+        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon ic-orange"><i class="fas fa-palette"></i></div>
+        <h3 class="service-title">Logo & Poster Design</h3>
+        <p class="service-desc">Stunning brand identity — logos, banners, and marketing materials that stand out.</p>
+        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon ic-yellow"><i class="fab fa-google"></i></div>
+        <h3 class="service-title">Google My Business</h3>
+        <p class="service-desc">Optimize your GMB listing to appear in local searches and attract nearby customers.</p>
+        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon ic-cyan"><i class="fas fa-bullseye"></i></div>
+        <h3 class="service-title">Landing Pages</h3>
+        <p class="service-desc">High-converting landing pages designed specifically to maximize your lead generation.</p>
+        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon ic-red"><i class="fas fa-book-open"></i></div>
+        <h3 class="service-title">Digital Catalogue</h3>
+        <p class="service-desc">Beautiful digital product catalogues to showcase your offerings professionally online.</p>
+        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider container"></div>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="section-badge" style="background:rgba(249,115,22,0.1);border-color:rgba(249,115,22,0.3);color:var(--accent)"><i class="fas fa-tag" style="font-size:12px"></i> Affordable Plans</div>
+      <h2 class="section-title">Transparent <span class="gradient-text">Pricing Plans</span></h2>
+      <p class="section-sub">Professional websites at prices that won't break your budget. No hidden charges.</p>
+    </div>
+    <div class="pricing-grid">
+      <!-- Basic -->
+      <div class="price-card fade-in">
+        <div class="price-plan">Basic</div>
+        <div class="price-amount">
+          <span class="price-currency">₹</span>
+          <span class="price-number">1999</span>
+        </div>
+        <div class="price-period">per year • all inclusive</div>
+        <div class="price-name">Basic Business Website</div>
+        <div class="price-features">
+          <div class="price-feat"><i class="fas fa-check-circle"></i> 5-Page Responsive Website</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Mobile Optimized</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Contact Form</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Google Maps Integration</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> WhatsApp Button</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> 1 Year Hosting + Domain</div>
+        </div>
+        <button class="price-btn price-btn-outline" onclick="window.open('https://grihvedaweb.co.in/website-offer','_blank')">Get Started <i class="fas fa-arrow-right" style="margin-left:6px"></i></button>
+      </div>
+      <!-- Professional -->
+      <div class="price-card popular fade-in">
+        <div class="price-badge">⭐ Most Popular</div>
+        <div class="price-plan">Professional</div>
+        <div class="price-amount">
+          <span class="price-currency">₹</span>
+          <span class="price-number">3999</span>
+        </div>
+        <div class="price-period">per year • all inclusive</div>
+        <div class="price-name">Professional Website</div>
+        <div class="price-features">
+          <div class="price-feat"><i class="fas fa-check-circle"></i> 10-Page Premium Website</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Advanced UI/UX Design</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Lead Capture Forms</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Social Media Integration</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Basic SEO Setup</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Google Analytics</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> 1 Year Hosting + Domain</div>
+        </div>
+        <button class="price-btn price-btn-primary" onclick="window.open('https://grihvedaweb.co.in/website-offer','_blank')">Get Started <i class="fas fa-arrow-right" style="margin-left:6px"></i></button>
+      </div>
+      <!-- SEO -->
+      <div class="price-card fade-in">
+        <div class="price-badge" style="background:linear-gradient(135deg,var(--accent2),#0891b2)">🏆 Best Value</div>
+        <div class="price-plan">Enterprise</div>
+        <div class="price-amount">
+          <span class="price-currency">₹</span>
+          <span class="price-number">5999</span>
+        </div>
+        <div class="price-period">per year • all inclusive</div>
+        <div class="price-name">Fully SEO Website</div>
+        <div class="price-features">
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Unlimited Pages</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Full SEO Optimization</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Google Rank Guarantee</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Blog + Content Setup</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Speed Optimization</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Monthly Report</div>
+          <div class="price-feat"><i class="fas fa-check-circle"></i> Priority Support</div>
+        </div>
+        <button class="price-btn price-btn-outline" style="border-color:rgba(6,182,212,0.4);color:var(--accent2)" onclick="window.open('https://grihvedaweb.co.in/website-offer','_blank')">Get Started <i class="fas fa-arrow-right" style="margin-left:6px"></i></button>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px" class="fade-in">
+      <p style="color:var(--text-muted);font-size:14px;margin-bottom:20px"><i class="fas fa-shield-halved" style="color:var(--green);margin-right:6px"></i> All plans include free consultation, setup support, and after-delivery guidance</p>
+      <a href="https://grihvedaweb.co.in/website-offer" target="_blank" class="btn btn-outline" style="margin:0 auto"><i class="fas fa-external-link-alt"></i> View All Offers</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider container"></div>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="section-badge"><i class="fas fa-globe" style="font-size:12px"></i> Our Work</div>
+      <h2 class="section-title">Live <span class="gradient-text">Demo Websites</span></h2>
+      <p class="section-sub">Real websites we've built for businesses just like yours. Click to explore.</p>
+    </div>
+    <div class="portfolio-grid">
+      <a href="https://rudrapurehygiene.co.in" target="_blank" class="port-card fade-in">
+        <div class="port-img" style="background:linear-gradient(135deg,#0F3D26,#1B5E35)">
+          <div class="port-img-inner">
+            <div class="port-mockup" style="border-color:rgba(34,197,94,0.3)">
+              <div class="port-mock-bar" style="background:linear-gradient(90deg,#16A34A,#22C55E)"><div class="pm-dot"></div><div class="pm-dot"></div></div>
+              <div class="port-mock-body"><div class="pmb-line"></div><div class="pmb-line med"></div><div class="pmb-line short"></div><div class="pmb-line"></div></div>
+            </div>
+          </div>
+          <div class="port-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="port-content">
+          <div class="port-category">Cleaning Products</div>
+          <div class="port-title">Rudra Pure Hygiene</div>
+          <div class="port-url"><i class="fas fa-link"></i> rudrapurehygiene.co.in</div>
+        </div>
+      </a>
+      <a href="https://bestchoiceservices.co.in" target="_blank" class="port-card fade-in">
+        <div class="port-img" style="background:linear-gradient(135deg,#1E3A5F,#1A4A8A)">
+          <div class="port-img-inner">
+            <div class="port-mockup" style="border-color:rgba(59,130,246,0.3)">
+              <div class="port-mock-bar" style="background:linear-gradient(90deg,#1D4ED8,#3B82F6)"><div class="pm-dot"></div><div class="pm-dot"></div></div>
+              <div class="port-mock-body"><div class="pmb-line"></div><div class="pmb-line med"></div><div class="pmb-line short"></div><div class="pmb-line"></div></div>
+            </div>
+          </div>
+          <div class="port-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="port-content">
+          <div class="port-category">Home Services</div>
+          <div class="port-title">Best Choice Services</div>
+          <div class="port-url"><i class="fas fa-link"></i> bestchoiceservices.co.in</div>
+        </div>
+      </a>
+      <a href="https://cvmakers.co.in" target="_blank" class="port-card fade-in">
+        <div class="port-img" style="background:linear-gradient(135deg,#3B1F5E,#5B2D8C)">
+          <div class="port-img-inner">
+            <div class="port-mockup" style="border-color:rgba(139,92,246,0.3)">
+              <div class="port-mock-bar" style="background:linear-gradient(90deg,var(--primary),var(--primary-light))"><div class="pm-dot"></div><div class="pm-dot"></div></div>
+              <div class="port-mock-body"><div class="pmb-line"></div><div class="pmb-line med"></div><div class="pmb-line short"></div><div class="pmb-line"></div></div>
+            </div>
+          </div>
+          <div class="port-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="port-content">
+          <div class="port-category">Resume Services</div>
+          <div class="port-title">CV Makers</div>
+          <div class="port-url"><i class="fas fa-link"></i> cvmakers.co.in</div>
+        </div>
+      </a>
+      <a href="https://property.grihvedaweb.co.in" target="_blank" class="port-card fade-in">
+        <div class="port-img" style="background:linear-gradient(135deg,#4A1500,#7C2D00)">
+          <div class="port-img-inner">
+            <div class="port-mockup" style="border-color:rgba(249,115,22,0.3)">
+              <div class="port-mock-bar" style="background:linear-gradient(90deg,#C2410C,var(--accent))"><div class="pm-dot"></div><div class="pm-dot"></div></div>
+              <div class="port-mock-body"><div class="pmb-line"></div><div class="pmb-line med"></div><div class="pmb-line short"></div><div class="pmb-line"></div></div>
+            </div>
+          </div>
+          <div class="port-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="port-content">
+          <div class="port-category">Real Estate</div>
+          <div class="port-title">Grihveda Property</div>
+          <div class="port-url"><i class="fas fa-link"></i> property.grihvedaweb.co.in</div>
+        </div>
+      </a>
+      <a href="https://restaurant.grihvedaweb.co.in" target="_blank" class="port-card fade-in">
+        <div class="port-img" style="background:linear-gradient(135deg,#1A0A2E,#2D1154)">
+          <div class="port-img-inner">
+            <div class="port-mockup" style="border-color:rgba(6,182,212,0.3)">
+              <div class="port-mock-bar" style="background:linear-gradient(90deg,#0891B2,var(--accent2))"><div class="pm-dot"></div><div class="pm-dot"></div></div>
+              <div class="port-mock-body"><div class="pmb-line"></div><div class="pmb-line med"></div><div class="pmb-line short"></div><div class="pmb-line"></div></div>
+            </div>
+          </div>
+          <div class="port-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="port-content">
+          <div class="port-category">Restaurant</div>
+          <div class="port-title">Grihveda Restaurant</div>
+          <div class="port-url"><i class="fas fa-link"></i> restaurant.grihvedaweb.co.in</div>
+        </div>
+      </a>
+      <div class="port-card fade-in" style="display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(108,53,222,0.05);border:2px dashed rgba(108,53,222,0.25);cursor:pointer;min-height:280px" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        <div style="width:56px;height:56px;border-radius:16px;background:rgba(108,53,222,0.15);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--primary-light);margin-bottom:16px">+</div>
+        <div style="font-size:16px;font-weight:700;margin-bottom:8px;color:var(--text)">Your Website Here</div>
+        <div style="font-size:14px;color:var(--text-muted);text-align:center;padding:0 20px">Be our next success story. Get started today!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="section-badge" style="background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.3);color:var(--green)"><i class="fas fa-trophy" style="font-size:12px"></i> Why Choose Us</div>
+      <h2 class="section-title">Why <span class="gradient-text">100+ Businesses</span> Trust Grihveda</h2>
+      <p class="section-sub">We don't just build websites — we build growth engines for your business.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-in">
+        <div class="why-icon"><i class="fas fa-indian-rupee-sign"></i></div>
+        <div><div class="why-title">Affordable Pricing</div><div class="why-text">Premium quality at prices designed for Indian businesses. Starting at just ₹1999/year.</div></div>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon"><i class="fas fa-bolt"></i></div>
+        <div><div class="why-title">Fast Delivery</div><div class="why-text">Your website goes live in 3–5 days. We respect your time and business deadlines.</div></div>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon"><i class="fas fa-chart-line"></i></div>
+        <div><div class="why-title">Lead Generation Focused</div><div class="why-text">Every page, button, and form is designed to convert visitors into paying customers.</div></div>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon"><i class="fas fa-users"></i></div>
+        <div><div class="why-title">100+ Businesses Served</div><div class="why-text">Proven track record across real estate, restaurants, services, and more industries.</div></div>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon"><i class="fas fa-headset"></i></div>
+        <div><div class="why-title">Ongoing Support</div><div class="why-text">We don't disappear after delivery. Get post-launch support, updates, and guidance.</div></div>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon"><i class="fas fa-mobile-screen"></i></div>
+        <div><div class="why-title">Mobile-First Design</div><div class="why-text">All websites are fully responsive and optimized for the 95% of users on mobile.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG CTA -->
+<section class="bigcta">
+  <div class="bigcta-bg"></div>
+  <div class="container">
+    <div class="bigcta-inner fade-in">
+      <div class="section-badge" style="margin:0 auto 20px"><i class="fas fa-fire" style="font-size:12px;color:var(--accent)"></i> Limited Time Offer</div>
+      <h2 class="bigcta-title">Start Growing Your Business <span class="gradient-text">Today!</span></h2>
+      <p class="bigcta-sub">Get a free strategy consultation and discover how we can help your business generate more leads online.</p>
+      <div class="bigcta-btns">
+        <a href="tel:+918866581993" class="btn btn-call"><i class="fas fa-phone-volume"></i> Call Now: 8866581993</a>
+        <a href="https://wa.me/918866531993" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp: 8866531993</a>
+      </div>
+      <p class="bigcta-note"><span>Free consultation</span> • No commitment required • Reply within 1 hour</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="contact-info fade-in-left">
+        <div>
+          <div class="section-badge"><i class="fas fa-paper-plane" style="font-size:12px"></i> Get In Touch</div>
+          <h2 class="contact-info-title">Let's Build Your <span class="gradient-text">Digital Future</span></h2>
+          <p class="contact-info-sub">Fill out the form and our team will reach out within 1 hour with a customized strategy for your business.</p>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon ci-purple"><i class="fas fa-phone"></i></div>
+          <div>
+            <div class="ci-label">Call / WhatsApp</div>
+            <a href="tel:+918866581993" class="ci-val" style="display:block;color:var(--text)">+91 8866581993</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon ci-green"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <div class="ci-label">WhatsApp</div>
+            <a href="https://wa.me/918866531993" class="ci-val" style="display:block;color:var(--text)">+91 8866531993</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon ci-cyan"><i class="fas fa-globe"></i></div>
+          <div>
+            <div class="ci-label">Website</div>
+            <a href="https://grihvedaweb.co.in" target="_blank" class="ci-val" style="display:block;color:var(--accent2)">grihvedaweb.co.in</a>
+          </div>
+        </div>
+        <div style="padding:20px;background:rgba(108,53,222,0.08);border:1px solid rgba(108,53,222,0.2);border-radius:var(--radius-sm)">
+          <div style="font-size:14px;font-weight:700;margin-bottom:8px"><i class="fas fa-clock" style="color:var(--accent);margin-right:8px"></i>Response Time</div>
+          <div style="font-size:13px;color:var(--text-muted)">We typically respond within <strong style="color:var(--text)">1 hour</strong> on WhatsApp and calls. Form submissions are replied to within same day.</div>
+        </div>
+      </div>
+      <div class="form-card fade-in-right">
+        <h3 class="form-title">Get Free Strategy Session 🎯</h3>
+        <p class="form-sub">Tell us about your business and we'll craft a growth plan for you.</p>
+        <form id="leadForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label class="form-label">Your Name *</label>
+            <input type="text" class="form-input" id="fname" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" class="form-input" id="fphone" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business Type *</label>
+            <select class="form-select" id="fbiz" required>
+              <option value="" disabled selected>Select your business type</option>
+              <option>Real Estate / Property</option>
+              <option>Restaurant / Food</option>
+              <option>Home Services</option>
+              <option>Retail / E-Commerce</option>
+              <option>Healthcare / Clinic</option>
+              <option>Education / Coaching</option>
+              <option>Professional Services</option>
+              <option>Manufacturing / Industrial</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">What do you need?</label>
+            <select class="form-select" id="fservice">
+              <option value="" disabled selected>Select service (optional)</option>
+              <option>Website Development</option>
+              <option>Facebook / Instagram Ads</option>
+              <option>SEO Optimization</option>
+              <option>Social Media Handling</option>
+              <option>Logo & Design</option>
+              <option>Google My Business</option>
+              <option>Full Digital Package</option>
+            </select>
+          </div>
+          <button type="submit" class="form-btn"><i class="fas fa-rocket"></i> Get Free Strategy Session</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle" style="font-size:24px;display:block;margin-bottom:8px"></i>
+          🎉 Thank you! We'll contact you within 1 hour on WhatsApp/Call.
+        </div>
+        <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:16px"><i class="fas fa-lock" style="margin-right:4px"></i> Your data is 100% safe and will never be shared.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:0">
+          <div class="logo-icon">G</div>
+          <div class="logo-text">Grihveda <span>Digital Marketing</span></div>
+        </div>
+        <p>We help businesses grow online with high-converting websites, ads, and lead generation strategies. Affordable, fast, and results-driven.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/918866531993" class="fs-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://grihvedaweb.co.in" class="fs-link"><i class="fas fa-globe"></i></a>
+          <a href="tel:+918866581993" class="fs-link"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Website Development</a></li>
+          <li><a href="#services">Facebook & Instagram Ads</a></li>
+          <li><a href="#services">SEO Optimization</a></li>
+          <li><a href="#services">Social Media Handling</a></li>
+          <li><a href="#services">Logo & Poster Design</a></li>
+          <li><a href="#services">Google My Business</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://grihvedaweb.co.in" target="_blank">Main Website</a></li>
+          <li><a href="https://grihvedaweb.co.in/website-offer" target="_blank">Website Offers</a></li>
+          <li><a href="#pricing">Pricing Plans</a></li>
+          <li><a href="#portfolio">Our Portfolio</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="tel:+918866581993">Call: 8866581993</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>Digital Marketing by Grihveda</span>. All rights reserved.</p>
+      <p>Made with <span>❤️</span> for Indian Businesses</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-btns">
+  <a href="https://wa.me/918866531993" class="float-btn float-wa float-pulse" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+918866581993" class="float-btn float-call" title="Call Now"><i class="fas fa-phone"></i></a>
+</div>
+
+<script>
+// Navbar scroll
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+// Mobile menu
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('open');
+  document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+}
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      const delay = entry.target.dataset.delay || 0;
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, delay);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+// Stagger service cards
+document.querySelectorAll('.service-card').forEach((el, i) => {
+  el.dataset.delay = i * 60;
+});
+document.querySelectorAll('.port-card').forEach((el, i) => {
+  el.dataset.delay = i * 80;
+});
+document.querySelectorAll('.why-card').forEach((el, i) => {
+  el.dataset.delay = i * 80;
+});
+document.querySelectorAll('.price-card').forEach((el, i) => {
+  el.dataset.delay = i * 100;
+});
+
+document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
+  observer.observe(el);
+});
+
+// Form submit
+function handleSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('fname').value;
+  const phone = document.getElementById('fphone').value;
+  const biz = document.getElementById('fbiz').value;
+  const service = document.getElementById('fservice').value;
+  
+  if (!name || !phone || !biz) return;
+  
+  const btn = e.target.querySelector('.form-btn');
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+  btn.disabled = true;
+  
+  setTimeout(() => {
+    document.getElementById('leadForm').style.display = 'none';
+    document.getElementById('formSuccess').classList.add('show');
+    
+    // Open WhatsApp with pre-filled message
+    const msg = encodeURIComponent(`Hi Grihveda! 👋\n\nName: ${name}\nPhone: ${phone}\nBusiness: ${biz}\nService Needed: ${service || 'To be discussed'}\n\nI'd like a free strategy session!`);
+    setTimeout(() => {
+      window.open(`https://wa.me/918866531993?text=${msg}`, '_blank');
+    }, 1000);
+  }, 1200);
+}
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const href = a.getAttribute('href');
+    if (href === '#') return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      const offset = 80;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+
+// Animate chart bars on load
+window.addEventListener('load', () => {
+  document.querySelectorAll('.bar').forEach((bar, i) => {
+    bar.style.animationDelay = `${i * 0.1}s`;
+  });
+});
+</script>
+</body>
+</html>
